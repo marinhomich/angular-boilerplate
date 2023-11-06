@@ -1,0 +1,53 @@
+<!-- <section>
+  <article>
+    <h3>Interpolação</h3>
+    <p>Valor da Interpolação {{ url }}</p>
+    <p>Resultado de 1 + 1 é {{ 1 + 1 }}</p>
+    <p>Resultao de 1 + 1 não é {{ 1 + 1 + getValor() }}</p>
+    <p>Curso de Angular: {{ cursoAngular && getCurtirCurso() }}</p>
+  </article>
+  <article>
+    <h3>Property Biding</h3>
+    <img src="{{ urlImagem }}" style="width: 200px; height: 200px" />
+    <img [src]="urlImagem" style="width: 200px; height: 200px" />
+  </article>
+</section> -->
+
+<!-- <section>
+  <h3>Class e Style Binding</h3>
+</section>
+
+<select #classe (change)="(0)">
+  <option value="1">Sucesso</option>
+  <option value="2">Info</option>
+  <br />
+  <br />
+</select>
+<div class="{{ classe.value === '1' ? 'block' : 'hidden' }}">
+  <p>valor 01</p>
+</div>
+
+<div class="{{ classe.value === '2' ? 'block' : 'hidden' }}">
+  <p>valor 02</p>
+</div> -->
+
+<section>
+  <h3>Event Binding</h3>
+  <div>
+    <!-- <button
+      (click)="botaoClicado()"
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    >
+      Click Me
+    </button> -->
+
+    <input
+      type="text"
+      class="bg-slate-100"
+      (keyup)="onKeyUp($event)"
+      (keyup.enter)="(salvarValor)"
+    />
+
+    <p>Valor Atual {{ valorAtual }}</p>
+  </div>
+</section>
